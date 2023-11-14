@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/reset.css"/>
-    <link rel="stylesheet" href="/styles/global.css"/>
+    <link rel="stylesheet" href="/styles/styles.css"/>
 
     <!-- Swiper CSS-->>
     <link rel="stylesheet" href="/styles/swiper-bundle.min.css"/>
@@ -18,11 +18,28 @@
         <nav> 
             <a href="#"><img src="/assets/logo-cemar.png" alt="Logo Cemar Seguros"></a>
             <ul>
-                <li>Quem somos</li>
-                <li>Para você</li>
-                <li>Para seus negócios</li>
-                <li>Assistência 24h</li>
-                <li>Sinistro</li>                
+                <li class="dropdown">
+                    <a href="#" class="selected">Quem somos</a>
+                    <div class="menu-selected"></div>
+                    <div class="dropdown-menu">
+                        <div><a href="#">Automóvel</a></div>
+                        <div><a href="#">Residencial</a></div>
+                        <div><a href="#">Vida</a></div>
+                        <div><a href="#">Moto</a></div>
+                        <div><a href="#">Consórcio</a></div>
+                        <div><a href="#">Fiança</a></div>
+                        <div><a href="#">Viagem</a></div>
+                        <div><a href="#">Bike</a></div>
+                        <div><a href="#">Pet</a></div>
+                        <div><a href="#">Equipamentos</a></div>
+                        <div><a href="#">Saúde</a></div>
+                        <div><a href="#">RC Profissão</a></div>
+                    </div>
+                </li>
+                <li><a href="">Para você</a></li>
+                <li><a href="">Para seus negócios</a></li>
+                <li><a href="">Assistência 24h</a></li>
+                <li><a href="">Sinistro</a></li>                
             </ul>
             <button id="primary-button">Ver todos os seguros</button>
         </nav>        

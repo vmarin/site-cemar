@@ -35,18 +35,18 @@ header {
     z-index: 999;
 }
 
-header nav {
+nav {
     margin: 0 auto;
     width: fit-content;
     display: flex;
     align-items: center;
 }
 
-header nav img {
+nav img {
     margin-right: 6.75rem;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     width: fit-content;
     align-items: center;
@@ -54,7 +54,8 @@ header nav ul {
     padding: 0 2rem;
 }
 
-header nav ul li {
+nav ul li {
+    position: relative;
     min-width: fit-content;
     height: fit-content;
     padding: 2.5rem 0.75rem;
@@ -64,7 +65,76 @@ header nav ul li {
     font-size: 1rem;
 }
 
-header nav button {
+nav ul li:hover {
+    color: var(--secondary-color);
+}
+
+nav ul li a{
+    text-decoration: none;    
+    color: var(--text);
+    position: relative;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li .selected{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+nav ul li .selected::after{
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;    
+    width: 15rem;
+    z-index: 999;
+    background-color: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: var(--text);   
+    display: block; 
+    padding-left: 1rem;
+    padding-top: 0.5rem;    
+    padding-bottom: 0.5rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #85c32e57;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+nav button {
     margin-left: 6.75rem;
 }
 
